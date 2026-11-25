@@ -1,0 +1,1589 @@
+{
+  "scope": "矩阵接口完整函数中的逐声明调用覆盖；数学预期与源码执行分别记录。",
+  "cases": [
+    {
+      "page": "TileOpReference/TGEMV.md",
+      "block": "tgemv_local",
+      "function": "product",
+      "op": "TGEMV",
+      "scale_mask": 0,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TGEMV(by_attr, b, a)",
+          "ordinal": 2
+        },
+        {
+          "expression": "TGEMV(by_options, b, a, fixp::keep_acc().row_max(row))",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TGEMV_ACC.md",
+      "block": "tgemv_acc_local",
+      "function": "product",
+      "op": "TGEMV_ACC",
+      "scale_mask": 0,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TGEMV_ACC(by_attr, c, b, a)",
+          "ordinal": 2
+        },
+        {
+          "expression": "TGEMV_ACC(by_options, c, b, a, fixp::keep_acc().row_max(row))",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TGEMV_BIAS.md",
+      "block": "tgemv_bias_local",
+      "function": "product",
+      "op": "TGEMV_BIAS",
+      "scale_mask": 0,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TGEMV_BIAS(by_attr, b, a, bias)",
+          "ordinal": 2
+        },
+        {
+          "expression": "TGEMV_BIAS(by_options, b, a, bias, fixp::keep_acc().row_max(row))",
+          "ordinal": 1
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TGEMV_MX.md",
+      "block": "tgemv_mx_local",
+      "function": "scale0",
+      "op": "TGEMV_MX",
+      "scale_mask": 0,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TGEMV_MX(by_attr, b, a)",
+          "ordinal": 6
+        },
+        {
+          "expression": "TGEMV_MX(by_options, b, a, fixp::keep_acc().row_max(row))",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TGEMV_MX.md",
+      "block": "tgemv_mx_local",
+      "function": "scale1",
+      "op": "TGEMV_MX",
+      "scale_mask": 1,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TGEMV_MX(by_attr, b, a, sa)",
+          "ordinal": 7
+        },
+        {
+          "expression": "TGEMV_MX(by_options, b, a, sa, fixp::keep_acc().row_max(row))",
+          "ordinal": 4
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TGEMV_MX.md",
+      "block": "tgemv_mx_local",
+      "function": "scale2",
+      "op": "TGEMV_MX",
+      "scale_mask": 2,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TGEMV_MX(by_attr, b, sb, a)",
+          "ordinal": 8
+        },
+        {
+          "expression": "TGEMV_MX(by_options, b, sb, a, fixp::keep_acc().row_max(row))",
+          "ordinal": 5
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TGEMV_MX.md",
+      "block": "tgemv_mx_local",
+      "function": "scale3",
+      "op": "TGEMV_MX",
+      "scale_mask": 3,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TGEMV_MX(by_attr, b, sb, a, sa)",
+          "ordinal": 1
+        },
+        {
+          "expression": "TGEMV_MX(by_options, b, sb, a, sa, fixp::keep_acc().row_max(row))",
+          "ordinal": 2
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TGEMV_MX.md",
+      "block": "tgemv_mx_local",
+      "function": "explicit_slots0",
+      "op": "TGEMV_MX",
+      "scale_mask": 0,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TGEMV_MX<0>(dst, b, absent, a, absent, fixp::keep_acc())",
+          "ordinal": 2
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TGEMV_MX.md",
+      "block": "tgemv_mx_local",
+      "function": "explicit_slots1",
+      "op": "TGEMV_MX",
+      "scale_mask": 1,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TGEMV_MX<1>(dst, b, absent, a, sa, fixp::keep_acc())",
+          "ordinal": 2
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TGEMV_MX.md",
+      "block": "tgemv_mx_local",
+      "function": "explicit_slots2",
+      "op": "TGEMV_MX",
+      "scale_mask": 2,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TGEMV_MX<2>(dst, b, sb, a, absent, fixp::keep_acc())",
+          "ordinal": 2
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TGEMV_MX_ACC.md",
+      "block": "tgemv_mx_acc_local",
+      "function": "scale0",
+      "op": "TGEMV_MX_ACC",
+      "scale_mask": 0,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TGEMV_MX_ACC(by_attr, c, b, a)",
+          "ordinal": 6
+        },
+        {
+          "expression": "TGEMV_MX_ACC(by_options, c, b, a, fixp::keep_acc().row_max(row))",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TGEMV_MX_ACC.md",
+      "block": "tgemv_mx_acc_local",
+      "function": "scale1",
+      "op": "TGEMV_MX_ACC",
+      "scale_mask": 1,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TGEMV_MX_ACC(by_attr, c, b, a, sa)",
+          "ordinal": 7
+        },
+        {
+          "expression": "TGEMV_MX_ACC(by_options, c, b, a, sa, fixp::keep_acc().row_max(row))",
+          "ordinal": 4
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TGEMV_MX_ACC.md",
+      "block": "tgemv_mx_acc_local",
+      "function": "scale2",
+      "op": "TGEMV_MX_ACC",
+      "scale_mask": 2,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TGEMV_MX_ACC(by_attr, c, b, sb, a)",
+          "ordinal": 8
+        },
+        {
+          "expression": "TGEMV_MX_ACC(by_options, c, b, sb, a, fixp::keep_acc().row_max(row))",
+          "ordinal": 5
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TGEMV_MX_ACC.md",
+      "block": "tgemv_mx_acc_local",
+      "function": "scale3",
+      "op": "TGEMV_MX_ACC",
+      "scale_mask": 3,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TGEMV_MX_ACC(by_attr, c, b, sb, a, sa)",
+          "ordinal": 1
+        },
+        {
+          "expression": "TGEMV_MX_ACC(by_options, c, b, sb, a, sa, fixp::keep_acc().row_max(row))",
+          "ordinal": 2
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TGEMV_MX_ACC.md",
+      "block": "tgemv_mx_acc_local",
+      "function": "explicit_slots0",
+      "op": "TGEMV_MX_ACC",
+      "scale_mask": 0,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TGEMV_MX_ACC<0>(dst, c, b, absent, a, absent, fixp::keep_acc())",
+          "ordinal": 2
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TGEMV_MX_ACC.md",
+      "block": "tgemv_mx_acc_local",
+      "function": "explicit_slots1",
+      "op": "TGEMV_MX_ACC",
+      "scale_mask": 1,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TGEMV_MX_ACC<1>(dst, c, b, absent, a, sa, fixp::keep_acc())",
+          "ordinal": 2
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TGEMV_MX_ACC.md",
+      "block": "tgemv_mx_acc_local",
+      "function": "explicit_slots2",
+      "op": "TGEMV_MX_ACC",
+      "scale_mask": 2,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TGEMV_MX_ACC<2>(dst, c, b, sb, a, absent, fixp::keep_acc())",
+          "ordinal": 2
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TGEMV_MX_BIAS.md",
+      "block": "tgemv_mx_bias_local",
+      "function": "scale0",
+      "op": "TGEMV_MX_BIAS",
+      "scale_mask": 0,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TGEMV_MX_BIAS(by_attr, b, a, bias)",
+          "ordinal": 6
+        },
+        {
+          "expression": "TGEMV_MX_BIAS(by_options, b, a, bias, fixp::keep_acc().row_max(row))",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TGEMV_MX_BIAS.md",
+      "block": "tgemv_mx_bias_local",
+      "function": "scale1",
+      "op": "TGEMV_MX_BIAS",
+      "scale_mask": 1,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TGEMV_MX_BIAS(by_attr, b, a, sa, bias)",
+          "ordinal": 7
+        },
+        {
+          "expression": "TGEMV_MX_BIAS(by_options, b, a, sa, bias, fixp::keep_acc().row_max(row))",
+          "ordinal": 4
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TGEMV_MX_BIAS.md",
+      "block": "tgemv_mx_bias_local",
+      "function": "scale2",
+      "op": "TGEMV_MX_BIAS",
+      "scale_mask": 2,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TGEMV_MX_BIAS(by_attr, b, sb, a, bias)",
+          "ordinal": 8
+        },
+        {
+          "expression": "TGEMV_MX_BIAS(by_options, b, sb, a, bias, fixp::keep_acc().row_max(row))",
+          "ordinal": 5
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TGEMV_MX_BIAS.md",
+      "block": "tgemv_mx_bias_local",
+      "function": "scale3",
+      "op": "TGEMV_MX_BIAS",
+      "scale_mask": 3,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TGEMV_MX_BIAS(by_attr, b, sb, a, sa, bias)",
+          "ordinal": 1
+        },
+        {
+          "expression": "TGEMV_MX_BIAS(by_options, b, sb, a, sa, bias, fixp::keep_acc().row_max(row))",
+          "ordinal": 2
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TGEMV_MX_BIAS.md",
+      "block": "tgemv_mx_bias_local",
+      "function": "explicit_slots0",
+      "op": "TGEMV_MX_BIAS",
+      "scale_mask": 0,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TGEMV_MX_BIAS<0>(dst, b, absent, a, absent, bias, fixp::keep_acc())",
+          "ordinal": 2
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TGEMV_MX_BIAS.md",
+      "block": "tgemv_mx_bias_local",
+      "function": "explicit_slots1",
+      "op": "TGEMV_MX_BIAS",
+      "scale_mask": 1,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TGEMV_MX_BIAS<1>(dst, b, absent, a, sa, bias, fixp::keep_acc())",
+          "ordinal": 2
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TGEMV_MX_BIAS.md",
+      "block": "tgemv_mx_bias_local",
+      "function": "explicit_slots2",
+      "op": "TGEMV_MX_BIAS",
+      "scale_mask": 2,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TGEMV_MX_BIAS<2>(dst, b, sb, a, absent, bias, fixp::keep_acc())",
+          "ordinal": 2
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL.md",
+      "block": "tmatmul_local",
+      "function": "product",
+      "op": "TMATMUL",
+      "scale_mask": 0,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TMATMUL(by_attr, a, b)",
+          "ordinal": 1
+        },
+        {
+          "expression": "TMATMUL(by_options, a, b, fixp::keep_acc().row_max(row))",
+          "ordinal": 4
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL.md",
+      "block": "tmatmul_mixed",
+      "function": "product",
+      "op": "TMATMUL",
+      "scale_mask": 0,
+      "storage": "mixed",
+      "calls": [
+        {
+          "expression": "TMATMUL(by_attr, a, b, size_t{20})",
+          "ordinal": 2
+        },
+        {
+          "expression": "TMATMUL(by_options, a, b, fixp::keep_acc().row_max(row), size_t{20})",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL.md",
+      "block": "tmatmul_shared",
+      "function": "product",
+      "op": "TMATMUL",
+      "scale_mask": 0,
+      "storage": "shared",
+      "calls": [
+        {
+          "expression": "TMATMUL(by_attr, a, b)",
+          "ordinal": 1
+        },
+        {
+          "expression": "TMATMUL(by_options, a, b, fixp::keep_acc().row_max(row))",
+          "ordinal": 4
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_ACC.md",
+      "block": "tmatmul_acc_local",
+      "function": "product",
+      "op": "TMATMUL_ACC",
+      "scale_mask": 0,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TMATMUL_ACC(by_attr, c, a, b)",
+          "ordinal": 1
+        },
+        {
+          "expression": "TMATMUL_ACC(by_options, c, a, b, fixp::keep_acc().row_max(row))",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_ACC.md",
+      "block": "tmatmul_acc_mixed",
+      "function": "product",
+      "op": "TMATMUL_ACC",
+      "scale_mask": 0,
+      "storage": "mixed",
+      "calls": [
+        {
+          "expression": "TMATMUL_ACC(by_attr, c, a, b, size_t{20})",
+          "ordinal": 2
+        },
+        {
+          "expression": "TMATMUL_ACC(by_options, c, a, b, fixp::keep_acc().row_max(row), size_t{20})",
+          "ordinal": 4
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_ACC.md",
+      "block": "tmatmul_acc_shared",
+      "function": "product",
+      "op": "TMATMUL_ACC",
+      "scale_mask": 0,
+      "storage": "shared",
+      "calls": [
+        {
+          "expression": "TMATMUL_ACC(by_attr, c, a, b)",
+          "ordinal": 1
+        },
+        {
+          "expression": "TMATMUL_ACC(by_options, c, a, b, fixp::keep_acc().row_max(row))",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_BIAS.md",
+      "block": "tmatmul_bias_local",
+      "function": "product",
+      "op": "TMATMUL_BIAS",
+      "scale_mask": 0,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TMATMUL_BIAS(by_attr, a, b, bias)",
+          "ordinal": 1
+        },
+        {
+          "expression": "TMATMUL_BIAS(by_options, a, b, bias, fixp::keep_acc().row_max(row))",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_BIAS.md",
+      "block": "tmatmul_bias_mixed",
+      "function": "product",
+      "op": "TMATMUL_BIAS",
+      "scale_mask": 0,
+      "storage": "mixed",
+      "calls": [
+        {
+          "expression": "TMATMUL_BIAS(by_attr, a, b, bias, size_t{20})",
+          "ordinal": 2
+        },
+        {
+          "expression": "TMATMUL_BIAS(by_options, a, b, bias, fixp::keep_acc().row_max(row), size_t{20})",
+          "ordinal": 4
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_BIAS.md",
+      "block": "tmatmul_bias_shared",
+      "function": "product",
+      "op": "TMATMUL_BIAS",
+      "scale_mask": 0,
+      "storage": "shared",
+      "calls": [
+        {
+          "expression": "TMATMUL_BIAS(by_attr, a, b, bias)",
+          "ordinal": 1
+        },
+        {
+          "expression": "TMATMUL_BIAS(by_options, a, b, bias, fixp::keep_acc().row_max(row))",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX.md",
+      "block": "tmatmul_mx_local",
+      "function": "scale0",
+      "op": "TMATMUL_MX",
+      "scale_mask": 0,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX(by_attr, a, b)",
+          "ordinal": 8
+        },
+        {
+          "expression": "TMATMUL_MX(by_options, a, b, fixp::keep_acc().row_max(row))",
+          "ordinal": 5
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX.md",
+      "block": "tmatmul_mx_local",
+      "function": "scale1",
+      "op": "TMATMUL_MX",
+      "scale_mask": 1,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX(by_attr, a, sa, b)",
+          "ordinal": 9
+        },
+        {
+          "expression": "TMATMUL_MX(by_options, a, sa, b, fixp::keep_acc().row_max(row))",
+          "ordinal": 6
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX.md",
+      "block": "tmatmul_mx_local",
+      "function": "scale2",
+      "op": "TMATMUL_MX",
+      "scale_mask": 2,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX(by_attr, a, b, sb)",
+          "ordinal": 10
+        },
+        {
+          "expression": "TMATMUL_MX(by_options, a, b, sb, fixp::keep_acc().row_max(row))",
+          "ordinal": 7
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX.md",
+      "block": "tmatmul_mx_local",
+      "function": "scale3",
+      "op": "TMATMUL_MX",
+      "scale_mask": 3,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX(by_attr, a, sa, b, sb)",
+          "ordinal": 1
+        },
+        {
+          "expression": "TMATMUL_MX(by_options, a, sa, b, sb, fixp::keep_acc().row_max(row))",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX.md",
+      "block": "tmatmul_mx_local",
+      "function": "explicit_slots0",
+      "op": "TMATMUL_MX",
+      "scale_mask": 0,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX<0>(dst, a, absent, b, absent, fixp::keep_acc())",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX.md",
+      "block": "tmatmul_mx_local",
+      "function": "explicit_slots1",
+      "op": "TMATMUL_MX",
+      "scale_mask": 1,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX<1>(dst, a, sa, b, absent, fixp::keep_acc())",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX.md",
+      "block": "tmatmul_mx_local",
+      "function": "explicit_slots2",
+      "op": "TMATMUL_MX",
+      "scale_mask": 2,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX<2>(dst, a, absent, b, sb, fixp::keep_acc())",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX.md",
+      "block": "tmatmul_mx_mixed",
+      "function": "scale0",
+      "op": "TMATMUL_MX",
+      "scale_mask": 0,
+      "storage": "mixed",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX(by_attr, a, b, size_t{20})",
+          "ordinal": 14
+        },
+        {
+          "expression": "TMATMUL_MX(by_options, a, b, fixp::keep_acc().row_max(row), size_t{20})",
+          "ordinal": 11
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX.md",
+      "block": "tmatmul_mx_mixed",
+      "function": "scale1",
+      "op": "TMATMUL_MX",
+      "scale_mask": 1,
+      "storage": "mixed",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX(by_attr, a, sa, b, size_t{20})",
+          "ordinal": 15
+        },
+        {
+          "expression": "TMATMUL_MX(by_options, a, sa, b, fixp::keep_acc().row_max(row), size_t{20})",
+          "ordinal": 12
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX.md",
+      "block": "tmatmul_mx_mixed",
+      "function": "scale2",
+      "op": "TMATMUL_MX",
+      "scale_mask": 2,
+      "storage": "mixed",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX(by_attr, a, b, sb, size_t{20})",
+          "ordinal": 16
+        },
+        {
+          "expression": "TMATMUL_MX(by_options, a, b, sb, fixp::keep_acc().row_max(row), size_t{20})",
+          "ordinal": 13
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX.md",
+      "block": "tmatmul_mx_mixed",
+      "function": "scale3",
+      "op": "TMATMUL_MX",
+      "scale_mask": 3,
+      "storage": "mixed",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX(by_attr, a, sa, b, sb, size_t{20})",
+          "ordinal": 2
+        },
+        {
+          "expression": "TMATMUL_MX(by_options, a, sa, b, sb, fixp::keep_acc().row_max(row), size_t{20})",
+          "ordinal": 4
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX.md",
+      "block": "tmatmul_mx_mixed",
+      "function": "explicit_slots0",
+      "op": "TMATMUL_MX",
+      "scale_mask": 0,
+      "storage": "mixed",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX<0>(dst, a, absent, b, absent, fixp::keep_acc(), size_t{20})",
+          "ordinal": 4
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX.md",
+      "block": "tmatmul_mx_mixed",
+      "function": "explicit_slots1",
+      "op": "TMATMUL_MX",
+      "scale_mask": 1,
+      "storage": "mixed",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX<1>(dst, a, sa, b, absent, fixp::keep_acc(), size_t{20})",
+          "ordinal": 4
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX.md",
+      "block": "tmatmul_mx_mixed",
+      "function": "explicit_slots2",
+      "op": "TMATMUL_MX",
+      "scale_mask": 2,
+      "storage": "mixed",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX<2>(dst, a, absent, b, sb, fixp::keep_acc(), size_t{20})",
+          "ordinal": 4
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX.md",
+      "block": "tmatmul_mx_shared",
+      "function": "scale0",
+      "op": "TMATMUL_MX",
+      "scale_mask": 0,
+      "storage": "shared",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX(by_attr, a, b)",
+          "ordinal": 8
+        },
+        {
+          "expression": "TMATMUL_MX(by_options, a, b, fixp::keep_acc().row_max(row))",
+          "ordinal": 5
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX.md",
+      "block": "tmatmul_mx_shared",
+      "function": "scale1",
+      "op": "TMATMUL_MX",
+      "scale_mask": 1,
+      "storage": "shared",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX(by_attr, a, sa, b)",
+          "ordinal": 9
+        },
+        {
+          "expression": "TMATMUL_MX(by_options, a, sa, b, fixp::keep_acc().row_max(row))",
+          "ordinal": 6
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX.md",
+      "block": "tmatmul_mx_shared",
+      "function": "scale2",
+      "op": "TMATMUL_MX",
+      "scale_mask": 2,
+      "storage": "shared",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX(by_attr, a, b, sb)",
+          "ordinal": 10
+        },
+        {
+          "expression": "TMATMUL_MX(by_options, a, b, sb, fixp::keep_acc().row_max(row))",
+          "ordinal": 7
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX.md",
+      "block": "tmatmul_mx_shared",
+      "function": "scale3",
+      "op": "TMATMUL_MX",
+      "scale_mask": 3,
+      "storage": "shared",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX(by_attr, a, sa, b, sb)",
+          "ordinal": 1
+        },
+        {
+          "expression": "TMATMUL_MX(by_options, a, sa, b, sb, fixp::keep_acc().row_max(row))",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX.md",
+      "block": "tmatmul_mx_shared",
+      "function": "explicit_slots0",
+      "op": "TMATMUL_MX",
+      "scale_mask": 0,
+      "storage": "shared",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX<0>(dst, a, absent, b, absent, fixp::keep_acc())",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX.md",
+      "block": "tmatmul_mx_shared",
+      "function": "explicit_slots1",
+      "op": "TMATMUL_MX",
+      "scale_mask": 1,
+      "storage": "shared",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX<1>(dst, a, sa, b, absent, fixp::keep_acc())",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX.md",
+      "block": "tmatmul_mx_shared",
+      "function": "explicit_slots2",
+      "op": "TMATMUL_MX",
+      "scale_mask": 2,
+      "storage": "shared",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX<2>(dst, a, absent, b, sb, fixp::keep_acc())",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_ACC.md",
+      "block": "tmatmul_mx_acc_local",
+      "function": "scale0",
+      "op": "TMATMUL_MX_ACC",
+      "scale_mask": 0,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_ACC(by_attr, c, a, b)",
+          "ordinal": 8
+        },
+        {
+          "expression": "TMATMUL_MX_ACC(by_options, c, a, b, fixp::keep_acc().row_max(row))",
+          "ordinal": 5
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_ACC.md",
+      "block": "tmatmul_mx_acc_local",
+      "function": "scale1",
+      "op": "TMATMUL_MX_ACC",
+      "scale_mask": 1,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_ACC(by_attr, c, a, sa, b)",
+          "ordinal": 9
+        },
+        {
+          "expression": "TMATMUL_MX_ACC(by_options, c, a, sa, b, fixp::keep_acc().row_max(row))",
+          "ordinal": 6
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_ACC.md",
+      "block": "tmatmul_mx_acc_local",
+      "function": "scale2",
+      "op": "TMATMUL_MX_ACC",
+      "scale_mask": 2,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_ACC(by_attr, c, a, b, sb)",
+          "ordinal": 10
+        },
+        {
+          "expression": "TMATMUL_MX_ACC(by_options, c, a, b, sb, fixp::keep_acc().row_max(row))",
+          "ordinal": 7
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_ACC.md",
+      "block": "tmatmul_mx_acc_local",
+      "function": "scale3",
+      "op": "TMATMUL_MX_ACC",
+      "scale_mask": 3,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_ACC(by_attr, c, a, sa, b, sb)",
+          "ordinal": 1
+        },
+        {
+          "expression": "TMATMUL_MX_ACC(by_options, c, a, sa, b, sb, fixp::keep_acc().row_max(row))",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_ACC.md",
+      "block": "tmatmul_mx_acc_local",
+      "function": "explicit_slots0",
+      "op": "TMATMUL_MX_ACC",
+      "scale_mask": 0,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_ACC<0>(dst, c, a, absent, b, absent, fixp::keep_acc())",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_ACC.md",
+      "block": "tmatmul_mx_acc_local",
+      "function": "explicit_slots1",
+      "op": "TMATMUL_MX_ACC",
+      "scale_mask": 1,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_ACC<1>(dst, c, a, sa, b, absent, fixp::keep_acc())",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_ACC.md",
+      "block": "tmatmul_mx_acc_local",
+      "function": "explicit_slots2",
+      "op": "TMATMUL_MX_ACC",
+      "scale_mask": 2,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_ACC<2>(dst, c, a, absent, b, sb, fixp::keep_acc())",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_ACC.md",
+      "block": "tmatmul_mx_acc_mixed",
+      "function": "scale0",
+      "op": "TMATMUL_MX_ACC",
+      "scale_mask": 0,
+      "storage": "mixed",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_ACC(by_attr, c, a, b, size_t{20})",
+          "ordinal": 14
+        },
+        {
+          "expression": "TMATMUL_MX_ACC(by_options, c, a, b, fixp::keep_acc().row_max(row), size_t{20})",
+          "ordinal": 11
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_ACC.md",
+      "block": "tmatmul_mx_acc_mixed",
+      "function": "scale1",
+      "op": "TMATMUL_MX_ACC",
+      "scale_mask": 1,
+      "storage": "mixed",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_ACC(by_attr, c, a, sa, b, size_t{20})",
+          "ordinal": 15
+        },
+        {
+          "expression": "TMATMUL_MX_ACC(by_options, c, a, sa, b, fixp::keep_acc().row_max(row), size_t{20})",
+          "ordinal": 12
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_ACC.md",
+      "block": "tmatmul_mx_acc_mixed",
+      "function": "scale2",
+      "op": "TMATMUL_MX_ACC",
+      "scale_mask": 2,
+      "storage": "mixed",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_ACC(by_attr, c, a, b, sb, size_t{20})",
+          "ordinal": 16
+        },
+        {
+          "expression": "TMATMUL_MX_ACC(by_options, c, a, b, sb, fixp::keep_acc().row_max(row), size_t{20})",
+          "ordinal": 13
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_ACC.md",
+      "block": "tmatmul_mx_acc_mixed",
+      "function": "scale3",
+      "op": "TMATMUL_MX_ACC",
+      "scale_mask": 3,
+      "storage": "mixed",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_ACC(by_attr, c, a, sa, b, sb, size_t{20})",
+          "ordinal": 2
+        },
+        {
+          "expression": "TMATMUL_MX_ACC(by_options, c, a, sa, b, sb, fixp::keep_acc().row_max(row), size_t{20})",
+          "ordinal": 4
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_ACC.md",
+      "block": "tmatmul_mx_acc_mixed",
+      "function": "explicit_slots0",
+      "op": "TMATMUL_MX_ACC",
+      "scale_mask": 0,
+      "storage": "mixed",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_ACC<0>(dst, c, a, absent, b, absent, fixp::keep_acc(), size_t{20})",
+          "ordinal": 4
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_ACC.md",
+      "block": "tmatmul_mx_acc_mixed",
+      "function": "explicit_slots1",
+      "op": "TMATMUL_MX_ACC",
+      "scale_mask": 1,
+      "storage": "mixed",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_ACC<1>(dst, c, a, sa, b, absent, fixp::keep_acc(), size_t{20})",
+          "ordinal": 4
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_ACC.md",
+      "block": "tmatmul_mx_acc_mixed",
+      "function": "explicit_slots2",
+      "op": "TMATMUL_MX_ACC",
+      "scale_mask": 2,
+      "storage": "mixed",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_ACC<2>(dst, c, a, absent, b, sb, fixp::keep_acc(), size_t{20})",
+          "ordinal": 4
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_ACC.md",
+      "block": "tmatmul_mx_acc_shared",
+      "function": "scale0",
+      "op": "TMATMUL_MX_ACC",
+      "scale_mask": 0,
+      "storage": "shared",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_ACC(by_attr, c, a, b)",
+          "ordinal": 8
+        },
+        {
+          "expression": "TMATMUL_MX_ACC(by_options, c, a, b, fixp::keep_acc().row_max(row))",
+          "ordinal": 5
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_ACC.md",
+      "block": "tmatmul_mx_acc_shared",
+      "function": "scale1",
+      "op": "TMATMUL_MX_ACC",
+      "scale_mask": 1,
+      "storage": "shared",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_ACC(by_attr, c, a, sa, b)",
+          "ordinal": 9
+        },
+        {
+          "expression": "TMATMUL_MX_ACC(by_options, c, a, sa, b, fixp::keep_acc().row_max(row))",
+          "ordinal": 6
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_ACC.md",
+      "block": "tmatmul_mx_acc_shared",
+      "function": "scale2",
+      "op": "TMATMUL_MX_ACC",
+      "scale_mask": 2,
+      "storage": "shared",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_ACC(by_attr, c, a, b, sb)",
+          "ordinal": 10
+        },
+        {
+          "expression": "TMATMUL_MX_ACC(by_options, c, a, b, sb, fixp::keep_acc().row_max(row))",
+          "ordinal": 7
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_ACC.md",
+      "block": "tmatmul_mx_acc_shared",
+      "function": "scale3",
+      "op": "TMATMUL_MX_ACC",
+      "scale_mask": 3,
+      "storage": "shared",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_ACC(by_attr, c, a, sa, b, sb)",
+          "ordinal": 1
+        },
+        {
+          "expression": "TMATMUL_MX_ACC(by_options, c, a, sa, b, sb, fixp::keep_acc().row_max(row))",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_ACC.md",
+      "block": "tmatmul_mx_acc_shared",
+      "function": "explicit_slots0",
+      "op": "TMATMUL_MX_ACC",
+      "scale_mask": 0,
+      "storage": "shared",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_ACC<0>(dst, c, a, absent, b, absent, fixp::keep_acc())",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_ACC.md",
+      "block": "tmatmul_mx_acc_shared",
+      "function": "explicit_slots1",
+      "op": "TMATMUL_MX_ACC",
+      "scale_mask": 1,
+      "storage": "shared",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_ACC<1>(dst, c, a, sa, b, absent, fixp::keep_acc())",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_ACC.md",
+      "block": "tmatmul_mx_acc_shared",
+      "function": "explicit_slots2",
+      "op": "TMATMUL_MX_ACC",
+      "scale_mask": 2,
+      "storage": "shared",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_ACC<2>(dst, c, a, absent, b, sb, fixp::keep_acc())",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_BIAS.md",
+      "block": "tmatmul_mx_bias_local",
+      "function": "scale0",
+      "op": "TMATMUL_MX_BIAS",
+      "scale_mask": 0,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_BIAS(by_attr, a, b, bias)",
+          "ordinal": 8
+        },
+        {
+          "expression": "TMATMUL_MX_BIAS(by_options, a, b, bias, fixp::keep_acc().row_max(row))",
+          "ordinal": 5
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_BIAS.md",
+      "block": "tmatmul_mx_bias_local",
+      "function": "scale1",
+      "op": "TMATMUL_MX_BIAS",
+      "scale_mask": 1,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_BIAS(by_attr, a, sa, b, bias)",
+          "ordinal": 9
+        },
+        {
+          "expression": "TMATMUL_MX_BIAS(by_options, a, sa, b, bias, fixp::keep_acc().row_max(row))",
+          "ordinal": 6
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_BIAS.md",
+      "block": "tmatmul_mx_bias_local",
+      "function": "scale2",
+      "op": "TMATMUL_MX_BIAS",
+      "scale_mask": 2,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_BIAS(by_attr, a, b, sb, bias)",
+          "ordinal": 10
+        },
+        {
+          "expression": "TMATMUL_MX_BIAS(by_options, a, b, sb, bias, fixp::keep_acc().row_max(row))",
+          "ordinal": 7
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_BIAS.md",
+      "block": "tmatmul_mx_bias_local",
+      "function": "scale3",
+      "op": "TMATMUL_MX_BIAS",
+      "scale_mask": 3,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_BIAS(by_attr, a, sa, b, sb, bias)",
+          "ordinal": 1
+        },
+        {
+          "expression": "TMATMUL_MX_BIAS(by_options, a, sa, b, sb, bias, fixp::keep_acc().row_max(row))",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_BIAS.md",
+      "block": "tmatmul_mx_bias_local",
+      "function": "explicit_slots0",
+      "op": "TMATMUL_MX_BIAS",
+      "scale_mask": 0,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_BIAS<0>(dst, a, absent, b, absent, bias, fixp::keep_acc())",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_BIAS.md",
+      "block": "tmatmul_mx_bias_local",
+      "function": "explicit_slots1",
+      "op": "TMATMUL_MX_BIAS",
+      "scale_mask": 1,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_BIAS<1>(dst, a, sa, b, absent, bias, fixp::keep_acc())",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_BIAS.md",
+      "block": "tmatmul_mx_bias_local",
+      "function": "explicit_slots2",
+      "op": "TMATMUL_MX_BIAS",
+      "scale_mask": 2,
+      "storage": "local",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_BIAS<2>(dst, a, absent, b, sb, bias, fixp::keep_acc())",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_BIAS.md",
+      "block": "tmatmul_mx_bias_mixed",
+      "function": "scale0",
+      "op": "TMATMUL_MX_BIAS",
+      "scale_mask": 0,
+      "storage": "mixed",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_BIAS(by_attr, a, b, bias, size_t{20})",
+          "ordinal": 14
+        },
+        {
+          "expression": "TMATMUL_MX_BIAS(by_options, a, b, bias, fixp::keep_acc().row_max(row), size_t{20})",
+          "ordinal": 11
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_BIAS.md",
+      "block": "tmatmul_mx_bias_mixed",
+      "function": "scale1",
+      "op": "TMATMUL_MX_BIAS",
+      "scale_mask": 1,
+      "storage": "mixed",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_BIAS(by_attr, a, sa, b, bias, size_t{20})",
+          "ordinal": 15
+        },
+        {
+          "expression": "TMATMUL_MX_BIAS(by_options, a, sa, b, bias, fixp::keep_acc().row_max(row), size_t{20})",
+          "ordinal": 12
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_BIAS.md",
+      "block": "tmatmul_mx_bias_mixed",
+      "function": "scale2",
+      "op": "TMATMUL_MX_BIAS",
+      "scale_mask": 2,
+      "storage": "mixed",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_BIAS(by_attr, a, b, sb, bias, size_t{20})",
+          "ordinal": 16
+        },
+        {
+          "expression": "TMATMUL_MX_BIAS(by_options, a, b, sb, bias, fixp::keep_acc().row_max(row), size_t{20})",
+          "ordinal": 13
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_BIAS.md",
+      "block": "tmatmul_mx_bias_mixed",
+      "function": "scale3",
+      "op": "TMATMUL_MX_BIAS",
+      "scale_mask": 3,
+      "storage": "mixed",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_BIAS(by_attr, a, sa, b, sb, bias, size_t{20})",
+          "ordinal": 2
+        },
+        {
+          "expression": "TMATMUL_MX_BIAS(by_options, a, sa, b, sb, bias, fixp::keep_acc().row_max(row), size_t{20})",
+          "ordinal": 4
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_BIAS.md",
+      "block": "tmatmul_mx_bias_mixed",
+      "function": "explicit_slots0",
+      "op": "TMATMUL_MX_BIAS",
+      "scale_mask": 0,
+      "storage": "mixed",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_BIAS<0>(dst, a, absent, b, absent, bias, fixp::keep_acc(), size_t{20})",
+          "ordinal": 4
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_BIAS.md",
+      "block": "tmatmul_mx_bias_mixed",
+      "function": "explicit_slots1",
+      "op": "TMATMUL_MX_BIAS",
+      "scale_mask": 1,
+      "storage": "mixed",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_BIAS<1>(dst, a, sa, b, absent, bias, fixp::keep_acc(), size_t{20})",
+          "ordinal": 4
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_BIAS.md",
+      "block": "tmatmul_mx_bias_mixed",
+      "function": "explicit_slots2",
+      "op": "TMATMUL_MX_BIAS",
+      "scale_mask": 2,
+      "storage": "mixed",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_BIAS<2>(dst, a, absent, b, sb, bias, fixp::keep_acc(), size_t{20})",
+          "ordinal": 4
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_BIAS.md",
+      "block": "tmatmul_mx_bias_shared",
+      "function": "scale0",
+      "op": "TMATMUL_MX_BIAS",
+      "scale_mask": 0,
+      "storage": "shared",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_BIAS(by_attr, a, b, bias)",
+          "ordinal": 8
+        },
+        {
+          "expression": "TMATMUL_MX_BIAS(by_options, a, b, bias, fixp::keep_acc().row_max(row))",
+          "ordinal": 5
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_BIAS.md",
+      "block": "tmatmul_mx_bias_shared",
+      "function": "scale1",
+      "op": "TMATMUL_MX_BIAS",
+      "scale_mask": 1,
+      "storage": "shared",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_BIAS(by_attr, a, sa, b, bias)",
+          "ordinal": 9
+        },
+        {
+          "expression": "TMATMUL_MX_BIAS(by_options, a, sa, b, bias, fixp::keep_acc().row_max(row))",
+          "ordinal": 6
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_BIAS.md",
+      "block": "tmatmul_mx_bias_shared",
+      "function": "scale2",
+      "op": "TMATMUL_MX_BIAS",
+      "scale_mask": 2,
+      "storage": "shared",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_BIAS(by_attr, a, b, sb, bias)",
+          "ordinal": 10
+        },
+        {
+          "expression": "TMATMUL_MX_BIAS(by_options, a, b, sb, bias, fixp::keep_acc().row_max(row))",
+          "ordinal": 7
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_BIAS.md",
+      "block": "tmatmul_mx_bias_shared",
+      "function": "scale3",
+      "op": "TMATMUL_MX_BIAS",
+      "scale_mask": 3,
+      "storage": "shared",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_BIAS(by_attr, a, sa, b, sb, bias)",
+          "ordinal": 1
+        },
+        {
+          "expression": "TMATMUL_MX_BIAS(by_options, a, sa, b, sb, bias, fixp::keep_acc().row_max(row))",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_BIAS.md",
+      "block": "tmatmul_mx_bias_shared",
+      "function": "explicit_slots0",
+      "op": "TMATMUL_MX_BIAS",
+      "scale_mask": 0,
+      "storage": "shared",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_BIAS<0>(dst, a, absent, b, absent, bias, fixp::keep_acc())",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_BIAS.md",
+      "block": "tmatmul_mx_bias_shared",
+      "function": "explicit_slots1",
+      "op": "TMATMUL_MX_BIAS",
+      "scale_mask": 1,
+      "storage": "shared",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_BIAS<1>(dst, a, sa, b, absent, bias, fixp::keep_acc())",
+          "ordinal": 3
+        }
+      ]
+    },
+    {
+      "page": "TileOpReference/TMATMUL_MX_BIAS.md",
+      "block": "tmatmul_mx_bias_shared",
+      "function": "explicit_slots2",
+      "op": "TMATMUL_MX_BIAS",
+      "scale_mask": 2,
+      "storage": "shared",
+      "calls": [
+        {
+          "expression": "TMATMUL_MX_BIAS<2>(dst, a, absent, b, sb, bias, fixp::keep_acc())",
+          "ordinal": 3
+        }
+      ]
+    }
+  ]
+}
